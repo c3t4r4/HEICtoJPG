@@ -25,8 +25,8 @@ try:
             if ext == 'heic' or ext == 'HEIC':
                 destino = nome + '.jpg'
                 origem = file
-                print destino
-                print origem
+                print(destino)
+                print(origem)
                 try:
                     subprocess.call(['heif-convert', origem, destino])
                 except:
